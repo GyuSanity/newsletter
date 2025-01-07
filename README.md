@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # my-vue-project
+=======
+# newsletter
+>>>>>>> 638b0bf (add type script)
 
 ## Project setup
 ```

@@ -9,7 +9,14 @@
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
+<<<<<<< HEAD
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+=======
+      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
+      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex" target="_blank" rel="noopener">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript" target="_blank" rel="noopener">typescript</a></li>
+>>>>>>> 638b0bf (add type script)
     </ul>
     <h3>Essential Links</h3>
     <ul>
@@ -30,6 +37,7 @@
   </div>
 </template>
 
+<<<<<<< HEAD
 <script>
 export default {
   name: 'HelloWorld',
@@ -37,6 +45,17 @@ export default {
     msg: String
   }
 }
+=======
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'HelloWorld',
+  props: {
+    msg: String,
+  },
+});
+>>>>>>> 638b0bf (add type script)
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
