@@ -1,11 +1,13 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import NewsLetterView from '../views/NewsLetter.vue'
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: NewsLetterView
   },
   {
     path: '/about',
@@ -20,6 +22,11 @@ const routes: Array<RouteRecordRaw> = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  AOS.init(); // Initialize AOS
+  next();
 })
 
 export default router

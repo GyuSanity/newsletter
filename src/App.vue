@@ -20,10 +20,20 @@ export default {
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
+  <h1>{{ hello }}</h1>
   <router-view/>
 </template>
 
+<<<<<<< HEAD
 >>>>>>> 638b0bf (add type script)
+=======
+<script lang="ts" setup>
+import { ref } from 'vue'
+
+const hello = ref("Hellow")
+</script>
+
+>>>>>>> 2269271 (add aos)
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
